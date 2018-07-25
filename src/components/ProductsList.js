@@ -4,9 +4,9 @@ export class ProductsList extends Component {
     render(){
         
         return (
-            <div>
+            <div className='row'>
             {this.props.products.map((product,index)=>{
-              return <Product {...product} />
+              return <Product {...product} className='col-3 bg-danger' />
              }) 
             }
           </div>  
